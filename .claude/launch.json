@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "store",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [".claude/serve.py", "4614"],
+      "port": 4614
+    }
+  ]
+}

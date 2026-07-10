@@ -1,0 +1,157 @@
+/* =========================================================================
+   MERIDIAN SUPPLY CO. — PRODUCT CATALOG
+   -------------------------------------------------------------------------
+   To add a new product, copy one block below and change the fields.
+   - id:        unique slug (lowercase, hyphens). Used in the product URL.
+   - featured:  true = shows on the homepage "Fresh on the roaster" grid.
+   Everything else renders automatically on shop.html and product.html.
+   ========================================================================= */
+
+const PRODUCTS = [
+  {
+    id: "antioquia-colombia",
+    image: "assets/products/antioquia-colombia.jpg",
+    name: "Antioquia",
+    origin: "Colombia",
+    coords: "6.2442° N, 75.5812° W",
+    price: 21,
+    weight: "12 oz (340g)",
+    roast: "Medium",
+    process: "Washed",
+    altitude: "1,750 masl",
+    notes: ["Red plum", "Cocoa nib", "Panela"],
+    tag: "Featured lot",
+    featured: true,
+    stock: true,
+    blurb: "A rounded, comforting cup from the hills of Antioquia. Washed and dried in the sun, it lands squarely between fruit and chocolate — the coffee we hand people who say they 'don't like coffee.'",
+    color: "#8a4b2f"
+  },
+  {
+    id: "yirgacheffe-ethiopia",
+    image: "assets/products/yirgacheffe-ethiopia.jpg",
+    name: "Yirgacheffe",
+    origin: "Ethiopia",
+    coords: "6.1628° N, 38.2044° E",
+    price: 24,
+    weight: "12 oz (340g)",
+    roast: "Light",
+    process: "Natural",
+    altitude: "2,100 masl",
+    notes: ["Blueberry", "Jasmine", "Lemon zest"],
+    tag: "Bestseller",
+    featured: true,
+    stock: true,
+    blurb: "The floral, fruit-forward classic. Natural processing pushes the berry notes way up front, with a jasmine lift on the finish. Best as pour-over.",
+    color: "#9c6b2e"
+  },
+  {
+    id: "huehuetenango-guatemala",
+    image: "assets/products/huehuetenango-guatemala.jpg",
+    name: "Huehuetenango",
+    origin: "Guatemala",
+    coords: "15.3197° N, 91.4707° W",
+    price: 22,
+    weight: "12 oz (340g)",
+    roast: "Medium-Dark",
+    process: "Washed",
+    altitude: "1,900 masl",
+    notes: ["Milk chocolate", "Toffee", "Orange"],
+    tag: "",
+    featured: true,
+    stock: true,
+    blurb: "Grown in the high, dry mountains of northwestern Guatemala. A dense, sweet cup with a chocolate backbone and a bright orange edge that keeps it from going flat.",
+    color: "#6b3f26"
+  },
+  {
+    id: "nyeri-kenya",
+    image: "assets/products/nyeri-kenya.jpg",
+    name: "Nyeri",
+    origin: "Kenya",
+    coords: "0.4197° S, 36.9510° E",
+    price: 25,
+    weight: "12 oz (340g)",
+    roast: "Light-Medium",
+    process: "Washed",
+    altitude: "1,800 masl",
+    notes: ["Blackcurrant", "Grapefruit", "Brown sugar"],
+    tag: "New",
+    featured: true,
+    stock: true,
+    blurb: "Bright, juicy, unmistakably Kenyan. Blackcurrant and grapefruit acidity wrapped around a brown-sugar sweetness. A cup with real backbone.",
+    color: "#a03a2f"
+  },
+  {
+    id: "meridian-house-blend",
+    image: "assets/products/meridian-house-blend.jpg",
+    name: "House Blend",
+    origin: "Blend",
+    coords: "Colombia + Brazil",
+    price: 18,
+    weight: "12 oz (340g)",
+    roast: "Medium",
+    process: "Blend",
+    altitude: "Various",
+    notes: ["Hazelnut", "Dark cocoa", "Caramel"],
+    tag: "Everyday",
+    featured: false,
+    stock: true,
+    blurb: "Our workhorse. Balanced, forgiving, and sweet whether you brew it in a French press or a drip machine. The bag we go through fastest in our own kitchen.",
+    color: "#5a3a26"
+  },
+  {
+    id: "gakenke-rwanda",
+    image: "assets/products/gakenke-rwanda.jpg",
+    name: "Gakenke",
+    origin: "Rwanda",
+    coords: "1.6959° S, 29.7897° E",
+    price: 23,
+    weight: "12 oz (340g)",
+    roast: "Light",
+    process: "Washed",
+    altitude: "1,950 masl",
+    notes: ["Red apple", "Black tea", "Honey"],
+    tag: "",
+    featured: false,
+    stock: true,
+    blurb: "Delicate and tea-like, from the volcanic soils of northern Rwanda. Red apple sweetness with a clean, honeyed finish. Rewards a careful pour.",
+    color: "#8a5a2e"
+  },
+  {
+    id: "tarrazu-costa-rica",
+    image: "assets/products/tarrazu-costa-rica.jpg",
+    name: "Tarrazú",
+    origin: "Costa Rica",
+    coords: "9.6580° N, 84.0195° W",
+    price: 22,
+    weight: "12 oz (340g)",
+    roast: "Medium",
+    process: "Honey",
+    altitude: "1,600 masl",
+    notes: ["Green apple", "Almond", "Molasses"],
+    tag: "",
+    featured: false,
+    stock: true,
+    blurb: "Honey-processed for a syrupy body that sits between washed and natural. Crisp green-apple acidity, a nutty middle, and a long molasses finish.",
+    color: "#7a5228"
+  },
+  {
+    id: "decaf-swiss-water",
+    image: "assets/products/decaf-swiss-water.jpg",
+    name: "Midnight",
+    origin: "Colombia · Decaf",
+    coords: "Swiss Water® Process",
+    price: 20,
+    weight: "12 oz (340g)",
+    roast: "Medium-Dark",
+    process: "Swiss Water Decaf",
+    altitude: "1,700 masl",
+    notes: ["Dark chocolate", "Walnut", "Cherry"],
+    tag: "Decaf",
+    featured: false,
+    stock: true,
+    blurb: "Chemical-free Swiss Water decaffeination that keeps the flavor intact. Deep chocolate and walnut, with a surprising cherry note. The 9pm cup.",
+    color: "#3e2a1e"
+  }
+];
+
+if (typeof module !== "undefined") { module.exports = PRODUCTS; }

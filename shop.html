@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <title>Shop All Coffee — Single-Origin & Blends | Meridian Supply Co.</title>
+  <meta name="description" content="Browse our full range of small-batch specialty coffee — single-origin beans from Colombia, Ethiopia, Kenya and more, plus blends and Swiss Water decaf. Roasted to order." />
+  <meta name="keywords" content="buy coffee beans, single origin coffee shop, specialty coffee online, light roast, medium roast, dark roast, decaf coffee" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://meridianroasters.com/shop.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Shop All Coffee — Meridian Supply Co." />
+  <meta property="og:description" content="Single-origin beans, blends, and decaf. Roasted to order, shipped in 24 hours." />
+  <meta property="og:url" content="https://meridianroasters.com/shop.html" />
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://meridianroasters.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://meridianroasters.com/shop.html" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Space+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-head">
+      <span class="eyebrow">The full catalog</span>
+      <h1>Every roast, one place.</h1>
+      <p>Single-origin lots, house blends, and a decaf worth drinking. All roasted to order and shipped within 24 hours — filter by roast level to find your cup.</p>
+    </header>
+
+    <div class="shop-toolbar">
+      <div class="filters" id="filters" role="group" aria-label="Filter by roast">
+        <button class="filter-chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-chip" data-filter="Light" aria-pressed="false">Light</button>
+        <button class="filter-chip" data-filter="Medium" aria-pressed="false">Medium</button>
+        <button class="filter-chip" data-filter="Dark" aria-pressed="false">Dark</button>
+        <button class="filter-chip" data-filter="Blend" aria-pressed="false">Blends</button>
+        <button class="filter-chip" data-filter="Decaf" aria-pressed="false">Decaf</button>
+      </div>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+
+    <section class="shop-grid" aria-label="Coffee products">
+      <div class="grid" id="shop-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <!-- Primary Meta Tags -->
+  <title>Meridian Supply Co. — Small-Batch Specialty Coffee, Roasted to Order</title>
+  <meta name="title" content="Meridian Supply Co. — Small-Batch Specialty Coffee, Roasted to Order" />
+  <meta name="description" content="Single-origin and blended specialty coffee roasted to order in small batches. Ethically sourced beans, shipped within 24 hours of roasting. Free shipping over $45." />
+  <meta name="keywords" content="specialty coffee, single origin coffee, coffee beans online, small batch roasted coffee, freshly roasted coffee, buy coffee online" />
+  <meta name="author" content="Meridian Supply Co." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://meridianroasters.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://meridianroasters.com/" />
+  <meta property="og:title" content="Meridian Supply Co. — Small-Batch Specialty Coffee" />
+  <meta property="og:description" content="Single-origin and blended specialty coffee roasted to order. Ethically sourced, shipped within 24 hours." />
+  <meta property="og:site_name" content="Meridian Supply Co." />
+  <meta property="og:image" content="https://meridianroasters.com/assets/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Meridian Supply Co. — Small-Batch Specialty Coffee" />
+  <meta name="twitter:description" content="Single-origin and blended specialty coffee roasted to order. Ethically sourced, shipped within 24 hours." />
+  <meta name="twitter:image" content="https://meridianroasters.com/assets/og-image.jpg" />
+
+  <meta name="theme-color" content="#2b1a12" />
+
+  <!-- Structured Data: Organization + WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://meridianroasters.com/#organization",
+        "name": "Meridian Supply Co.",
+        "url": "https://meridianroasters.com/",
+        "logo": "https://meridianroasters.com/assets/logo.png",
+        "description": "Small-batch specialty coffee roaster shipping single-origin and blended beans roasted to order.",
+        "sameAs": [
+          "https://www.instagram.com/meridiansupplyco",
+          "https://www.facebook.com/meridiansupplyco"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://meridianroasters.com/#website",
+        "url": "https://meridianroasters.com/",
+        "name": "Meridian Supply Co.",
+        "publisher": { "@id": "https://meridianroasters.com/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://meridianroasters.com/shop.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Space+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header injected by JS -->
+  <div id="site-header"></div>
+
+  <main id="main">
+    <!-- FEATURED LOT (purchasable) -->
+    <section class="feature-lot" id="feature-lot" aria-label="Featured lot"></section>
+
+    <!-- ORIGINS TICKER -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Ethiopia</span><span aria-hidden="true">·</span>
+        <span>Colombia</span><span aria-hidden="true">·</span>
+        <span>Guatemala</span><span aria-hidden="true">·</span>
+        <span>Kenya</span><span aria-hidden="true">·</span>
+        <span>Rwanda</span><span aria-hidden="true">·</span>
+        <span>Costa Rica</span><span aria-hidden="true">·</span>
+        <span>Ethiopia</span><span aria-hidden="true">·</span>
+        <span>Colombia</span><span aria-hidden="true">·</span>
+        <span>Guatemala</span><span aria-hidden="true">·</span>
+        <span>Kenya</span><span aria-hidden="true">·</span>
+        <span>Rwanda</span><span aria-hidden="true">·</span>
+        <span>Costa Rica</span><span aria-hidden="true">·</span>
+      </div>
+    </div>
+
+    <!-- STOREFRONT CATALOG -->
+    <section class="storefront" id="shop" aria-labelledby="shop-heading">
+      <div class="storefront__bar">
+        <div>
+          <span class="eyebrow">The lot list</span>
+          <h2 id="shop-heading">Shop the current harvest</h2>
+        </div>
+        <div class="storefront__tools">
+          <span class="storefront__count"><b id="storeCount">8</b> lots in stock</span>
+          <label class="sorter">Sort
+            <select id="sortSelect" aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="name">Name: A–Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="storefront__grid">
+        <aside class="rail" aria-label="Filter products">
+          <div class="rail__group">
+            <h3 class="rail__title">Type</h3>
+            <div class="rail__pills" id="railCat">
+              <button data-cat="all" aria-pressed="true">All</button>
+              <button data-cat="single">Single origin</button>
+              <button data-cat="blends">Blends</button>
+              <button data-cat="decaf">Decaf</button>
+            </div>
+          </div>
+          <div class="rail__group">
+            <h3 class="rail__title">Roast</h3>
+            <div class="rail__pills" id="railRoast">
+              <button data-roast="all" aria-pressed="true">All</button>
+              <button data-roast="Light">Light</button>
+              <button data-roast="Medium">Medium</button>
+              <button data-roast="Dark">Dark</button>
+            </div>
+          </div>
+          <div class="rail__group">
+            <h3 class="rail__title">Origin</h3>
+            <div class="rail__pills" id="railOrigin"></div>
+          </div>
+          <div class="rail__wholesale" id="wholesale">
+            <span class="rail__stamp">Trade desk</span>
+            <h3>Wholesale &amp; export</h3>
+            <p>Buying by the sack? We ship green &amp; roasted lots worldwide — 5&nbsp;kg minimum, priced per origin.</p>
+            <a class="btn btn--solid btn--block" href="mailto:trade@meridiansupply.com?subject=Wholesale%20enquiry">Request pricing →</a>
+          </div>
+        </aside>
+
+        <div class="catalog">
+          <div class="grid" id="store-grid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust" aria-label="Why Meridian">
+      <div class="trust__inner">
+        <div class="trust__item"><b>Direct trade</b><span>Bought from farms we visit, above Fair Trade.</span></div>
+        <div class="trust__item"><b>Roasted to order</b><span>Nothing warehoused — beans hit the drum the week they ship.</span></div>
+        <div class="trust__item"><b>Shipped in 24h</b><span>Out the door in a day, carbon-offset worldwide.</span></div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="cta-band__inner">
+        <h2 id="cta-heading">Get the drop list.</h2>
+        <p>New micro-lots sell out in days. Subscribers hear first — plus 10% off your first order.</p>
+        <form class="signup" id="signup-form" novalidate>
+          <label class="visually-hidden" for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <button type="submit" class="btn btn--solid">Notify me</button>
+        </form>
+        <p class="signup__note" id="signup-note" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

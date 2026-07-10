@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <!-- Title/description/schema are injected by product.js based on ?id= -->
+  <title>Coffee — Meridian Supply Co.</title>
+  <meta name="description" content="Small-batch specialty coffee, roasted to order at Meridian Supply Co." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" id="canonical" href="https://meridianroasters.com/product.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Space+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="site-header"></div>
+
+  <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span id="crumb-name">Coffee</span>
+  </nav>
+
+  <main id="main">
+    <div class="pdp" id="pdp"></div>
+
+    <section class="section" aria-labelledby="more-heading">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Keep exploring</span>
+          <h2 id="more-heading">You might also like</h2>
+        </div>
+        <a class="link-arrow" href="shop.html">Back to shop →</a>
+      </div>
+      <div class="grid" id="related-grid"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>
