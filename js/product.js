@@ -9,7 +9,7 @@ function renderProduct() {
   const p = PRODUCTS.find((x) => x.id === id) || PRODUCTS[0];
 
   // --- Dynamic SEO ---
-  document.title = `${p.name} — ${p.origin} Coffee | Meridian Supply Co.`;
+  document.title = `${p.name} — ${p.origin} Coffee | Meridian Roasters`;
   setMeta("description", `${p.blurb} Tasting notes: ${p.notes.join(", ")}. $${p.price} per ${p.weight}, roasted to order.`);
   const canonical = document.getElementById("canonical");
   if (canonical) canonical.href = `https://meridianroasters.com/product.html?id=${p.id}`;
@@ -21,12 +21,15 @@ function renderProduct() {
     "@type": "Product",
     "name": `${p.name} — ${p.origin}`,
     "description": p.blurb,
-    "brand": { "@type": "Brand", "name": "Meridian Supply Co." },
+    "image": `https://meridianroasters.com/${p.image}`,
+    "sku": p.id.toUpperCase(),
+    "brand": { "@type": "Brand", "name": "Meridian Roasters" },
     "category": "Specialty Coffee",
     "offers": {
       "@type": "Offer",
       "price": p.price.toFixed(2),
       "priceCurrency": "USD",
+      "itemCondition": "https://schema.org/NewCondition",
       "availability": p.stock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       "url": `https://meridianroasters.com/product.html?id=${p.id}`
     },
@@ -44,7 +47,7 @@ function renderProduct() {
 
   pdp.innerHTML = `
     <div class="pdp__visual">
-      ${productMedia(p, "card")}
+      ${productMedia(p, "feature")}
       <span class="pdp__coords">${p.coords}</span>
     </div>
     <div class="pdp__info">

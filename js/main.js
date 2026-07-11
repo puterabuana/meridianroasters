@@ -1,5 +1,5 @@
 /* =========================================================================
-   MERIDIAN SUPPLY CO. — APP LOGIC
+   MERIDIAN ROASTERS — APP LOGIC
    Header/footer injection · cart (in-memory) · product rendering · UI
    ========================================================================= */
 
@@ -26,8 +26,8 @@ function shade(hex, amt) {
 function productMedia(p, mode = "card") {
   if (p.image) {
     const alt = mode === "thumb" ? "" : `${p.name} — ${p.origin} specialty coffee`;
-    const lazy = mode === "thumb" ? "" : ' loading="lazy"';
-    return `<img class="product-photo" src="${p.image}" alt="${alt}"${lazy}
+    const loading = mode === "feature" ? ' fetchpriority="high"' : mode === "thumb" ? "" : ' loading="lazy"';
+    return `<img class="product-photo" src="${p.image}" width="1000" height="800" alt="${alt}" decoding="async"${loading}
       onerror="this.outerHTML=bagArt(PRODUCTS.find(x=>x.id==='${p.id}'),'${mode}')" />`;
   }
   return bagArt(p, mode);
@@ -108,7 +108,7 @@ function bagArt(p, mode = "card") {
 // Rotating rubber stamp for the hero — circular trade-seal text around a bean.
 function stampMark() {
   return `
-  <svg viewBox="0 0 120 120" role="img" aria-label="Meridian Supply Co. direct-trade seal">
+  <svg viewBox="0 0 120 120" role="img" aria-label="Meridian Roasters direct-trade seal">
     <defs>
       <path id="stamp-arc" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" />
     </defs>
@@ -117,7 +117,7 @@ function stampMark() {
     <text font-family="var(--fm), monospace" font-size="9" font-weight="500"
           letter-spacing="3.1" fill="var(--ink)">
       <textPath href="#stamp-arc" startOffset="0">
-        MERIDIAN SUPPLY CO · DIRECT TRADE · ROASTED TO ORDER ·
+        MERIDIAN ROASTERS · DIRECT TRADE · ROASTED TO ORDER ·
       </textPath>
     </text>
     <g transform="rotate(-20 60 60)">
@@ -167,7 +167,7 @@ function renderChrome() {
         </button>
         <a class="brand" href="index.html">
           ${brandMark()}
-          <span class="brand__word">Meridian</span> <span class="brand__mark">SUP·CO</span>
+          <span class="brand__word">Meridian</span> <span class="brand__mark">ROASTERS</span>
         </a>
         <form class="search" id="searchForm" role="search">
           <svg class="search__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
@@ -199,7 +199,7 @@ function renderChrome() {
     <footer class="site-footer">
       <div class="site-footer__inner">
         <div class="site-footer__brand">
-          <a class="brand" href="index.html">${brandMark()}<span class="brand__word">Meridian</span> <span class="brand__mark">SUP·CO</span></a>
+          <a class="brand" href="index.html">${brandMark()}<span class="brand__word">Meridian</span> <span class="brand__mark">ROASTERS</span></a>
           <p>Small-batch specialty coffee, roasted to order in Portland, Oregon since 2019.</p>
         </div>
         <div class="footcol">
@@ -215,22 +215,22 @@ function renderChrome() {
           <h4>Trade</h4>
           <ul>
             <li><a href="index.html#wholesale">Wholesale &amp; export</a></li>
-            <li><a href="mailto:trade@meridiansupply.com">Request pricing</a></li>
+            <li><a href="mailto:hello@meridianroasters.com?subject=Wholesale%20enquiry">Request pricing</a></li>
             <li><a href="about.html">Our sourcing</a></li>
-            <li><a href="mailto:hello@meridiansupply.com">Contact</a></li>
+            <li><a href="mailto:hello@meridianroasters.com">Contact</a></li>
           </ul>
         </div>
         <div class="footcol">
-          <h4>Follow</h4>
+          <h4>Resources</h4>
           <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Newsletter</a></li>
+            <li><a href="index.html#newsletter">Newsletter</a></li>
+            <li><a href="sitemap.xml">XML sitemap</a></li>
+            <li><a href="llms.txt">AI site guide</a></li>
           </ul>
         </div>
       </div>
       <div class="site-footer__bottom">
-        <span>© 2019–2026 Meridian Supply Co.</span>
+        <span>© 2019–2026 Meridian Roasters.</span>
         <span>Portland, OR · Roasted with care</span>
       </div>
     </footer>
@@ -463,13 +463,13 @@ function renderFeatureLot() {
     <div class="flot__media">
       <div class="hero__stamp" id="hero-stamp" aria-hidden="true"></div>
       <a class="flot__img" href="product.html?id=${p.id}" aria-label="${p.name}, ${p.origin}">
-        ${productMedia(p, "card")}
+        ${productMedia(p, "feature")}
       </a>
       <span class="flot__lot">Lot №07 · Featured</span>
     </div>
     <div class="flot__buy">
       <span class="flot__origin">${p.origin} · Single origin</span>
-      <h1 class="flot__name">${p.name}</h1>
+      <h1 class="flot__name">${p.name} specialty coffee</h1>
       <div class="flot__spec">${p.coords} &nbsp;·&nbsp; ${p.altitude} &nbsp;·&nbsp; ${p.process}</div>
       <p class="flot__blurb">${p.blurb}</p>
       <div class="flot__notes">${p.notes.map((n) => `<span>${n}</span>`).join("")}</div>

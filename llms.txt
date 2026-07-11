@@ -1,0 +1,13 @@
+# Meridian Roasters
+
+> Meridian Roasters is a small-batch specialty coffee roaster offering traceable single-origin coffee, blends, and Swiss Water decaf roasted to order.
+
+## Main pages
+- Home: https://meridianroasters.com/
+- Shop: https://meridianroasters.com/shop.html
+- Our story: https://meridianroasters.com/about.html
+
+## Key facts
+- Coffee is roasted in small batches during the week it ships.
+- Product pages state origin, processing method, altitude, roast level, and tasting notes.
+- Current origins include Colombia, Ethiopia, Guatemala, Kenya, Rwanda, and Costa Rica.

@@ -1,5 +1,5 @@
 /* =========================================================================
-   MERIDIAN SUPPLY CO. — PRODUCT CATALOG
+   MERIDIAN ROASTERS — PRODUCT CATALOG
    -------------------------------------------------------------------------
    To add a new product, copy one block below and change the fields.
    - id:        unique slug (lowercase, hyphens). Used in the product URL.

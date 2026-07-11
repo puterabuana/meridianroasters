@@ -729,6 +729,30 @@ html { scrollbar-color: var(--olive) var(--paper); }
     border-bottom: 1.5px solid var(--ink); gap: 1rem;
   }
 }
+
+/* Crawlable fallbacks and editorial SEO content. JavaScript progressively
+   enhances the header, catalog, and footer without hiding them from bots. */
+.seo-header, .seo-footer {
+  max-width: var(--max); margin: 0 auto; padding: 1rem var(--pad);
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  border-bottom: 1.5px solid var(--ink);
+}
+.seo-header nav, .seo-footer nav { display: flex; flex-wrap: wrap; gap: 1rem; font-family: var(--fm); }
+.seo-content, .faq { max-width: 980px; margin: 0 auto; padding: clamp(3rem, 7vw, 5.5rem) var(--pad); }
+.seo-content h2, .faq h2 { font-family: var(--fd); font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1; margin: .5rem 0 1.25rem; }
+.seo-content h3 { font-family: var(--fd); font-size: 1.3rem; margin-bottom: .55rem; }
+.seo-content p, .faq p { font-family: var(--fb); color: var(--ink-2); line-height: 1.75; }
+.seo-content p + p { margin-top: 1rem; }
+.seo-content__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 2rem 0; }
+.faq { padding-top: 0; }
+.faq details { border-top: 1.5px solid var(--ink); padding: 1rem 0; }
+.faq details:last-child { border-bottom: 1.5px solid var(--ink); }
+.faq summary { cursor: pointer; font-family: var(--fd); font-weight: 800; font-size: 1.1rem; }
+.faq details p { margin-top: .75rem; max-width: 70ch; }
+@media (max-width: 760px) {
+  .seo-header, .seo-footer { align-items: flex-start; flex-direction: column; }
+  .seo-content__grid { grid-template-columns: 1fr; gap: 1.4rem; }
+}
 @media (max-width: 520px) {
   .site-footer__inner { grid-template-columns: 1fr; }
   .hero__stats { flex-direction: column; }

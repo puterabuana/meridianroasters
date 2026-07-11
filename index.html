@@ -3,37 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Favicon -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/favicon.svg" />
-
-  <!-- Primary Meta Tags -->
-  <title>Meridian Supply Co. — Small-Batch Specialty Coffee, Roasted to Order</title>
-  <meta name="title" content="Meridian Supply Co. — Small-Batch Specialty Coffee, Roasted to Order" />
-  <meta name="description" content="Single-origin and blended specialty coffee roasted to order in small batches. Ethically sourced beans, shipped within 24 hours of roasting. Free shipping over $45." />
-  <meta name="keywords" content="specialty coffee, single origin coffee, coffee beans online, small batch roasted coffee, freshly roasted coffee, buy coffee online" />
-  <meta name="author" content="Meridian Supply Co." />
+  <title>Fresh Specialty Coffee | Meridian Roasters</title>
+  <meta name="description" content="Shop freshly roasted specialty coffee from Colombia, Ethiopia, Kenya and more. Small-batch, ethically sourced beans shipped within 24 hours." />
+  <meta name="author" content="Meridian Roasters" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://meridianroasters.com/" />
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://meridianroasters.com/" />
-  <meta property="og:title" content="Meridian Supply Co. — Small-Batch Specialty Coffee" />
-  <meta property="og:description" content="Single-origin and blended specialty coffee roasted to order. Ethically sourced, shipped within 24 hours." />
-  <meta property="og:site_name" content="Meridian Supply Co." />
+  <meta property="og:title" content="Fresh Specialty Coffee | Meridian Roasters" />
+  <meta property="og:description" content="Small-batch specialty coffee roasted to order and shipped fresh." />
+  <meta property="og:site_name" content="Meridian Roasters" />
   <meta property="og:image" content="https://meridianroasters.com/assets/og-image.jpg" />
-
-  <!-- Twitter -->
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Meridian Roasters specialty coffee" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Meridian Supply Co. — Small-Batch Specialty Coffee" />
-  <meta name="twitter:description" content="Single-origin and blended specialty coffee roasted to order. Ethically sourced, shipped within 24 hours." />
+  <meta name="twitter:title" content="Fresh Specialty Coffee | Meridian Roasters" />
+  <meta name="twitter:description" content="Small-batch specialty coffee roasted to order and shipped fresh." />
   <meta name="twitter:image" content="https://meridianroasters.com/assets/og-image.jpg" />
-
   <meta name="theme-color" content="#2b1a12" />
 
-  <!-- Structured Data: Organization + WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,26 +33,47 @@
       {
         "@type": "Organization",
         "@id": "https://meridianroasters.com/#organization",
-        "name": "Meridian Supply Co.",
+        "name": "Meridian Roasters",
         "url": "https://meridianroasters.com/",
-        "logo": "https://meridianroasters.com/assets/logo.png",
-        "description": "Small-batch specialty coffee roaster shipping single-origin and blended beans roasted to order.",
-        "sameAs": [
-          "https://www.instagram.com/meridiansupplyco",
-          "https://www.facebook.com/meridiansupplyco"
-        ]
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://meridianroasters.com/assets/og-image.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "description": "A small-batch specialty coffee roaster offering traceable single-origin coffee and blends roasted to order."
       },
       {
         "@type": "WebSite",
         "@id": "https://meridianroasters.com/#website",
         "url": "https://meridianroasters.com/",
-        "name": "Meridian Supply Co.",
+        "name": "Meridian Roasters",
         "publisher": { "@id": "https://meridianroasters.com/#organization" },
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://meridianroasters.com/shop.html?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "When is Meridian coffee roasted?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Coffee is roasted in small batches during the week it ships, then dispatched within 24 hours of roasting." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which coffee should I choose?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Choose a light roast for floral and fruit-led flavors, a medium roast for balance and sweetness, or a medium-dark roast for deeper chocolate and caramel notes." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Meridian Roasters offer decaf?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Midnight is a medium-dark Colombian coffee decaffeinated with the chemical-free Swiss Water process." }
+          }
+        ]
       }
     ]
   }
@@ -73,116 +86,76 @@
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
-
-  <!-- Header injected by JS -->
-  <div id="site-header"></div>
+  <div id="site-header">
+    <header class="seo-header">
+      <a class="brand" href="index.html">Meridian Roasters</a>
+      <nav aria-label="Main navigation"><a href="shop.html">Shop coffee</a> <a href="about.html">Our story</a> <a href="#wholesale">Wholesale</a></nav>
+    </header>
+  </div>
 
   <main id="main">
-    <!-- FEATURED LOT (purchasable) -->
-    <section class="feature-lot" id="feature-lot" aria-label="Featured lot"></section>
-
-    <!-- ORIGINS TICKER -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Ethiopia</span><span aria-hidden="true">·</span>
-        <span>Colombia</span><span aria-hidden="true">·</span>
-        <span>Guatemala</span><span aria-hidden="true">·</span>
-        <span>Kenya</span><span aria-hidden="true">·</span>
-        <span>Rwanda</span><span aria-hidden="true">·</span>
-        <span>Costa Rica</span><span aria-hidden="true">·</span>
-        <span>Ethiopia</span><span aria-hidden="true">·</span>
-        <span>Colombia</span><span aria-hidden="true">·</span>
-        <span>Guatemala</span><span aria-hidden="true">·</span>
-        <span>Kenya</span><span aria-hidden="true">·</span>
-        <span>Rwanda</span><span aria-hidden="true">·</span>
-        <span>Costa Rica</span><span aria-hidden="true">·</span>
+    <section class="feature-lot" id="feature-lot" aria-label="Featured specialty coffee">
+      <div class="flot__media">
+        <a class="flot__img" href="product.html?id=antioquia-colombia" aria-label="Antioquia Colombia specialty coffee">
+          <img class="product-photo" src="assets/products/antioquia-colombia.jpg" width="1000" height="800" alt="Freshly roasted Antioquia Colombia specialty coffee beans" fetchpriority="high" decoding="async" />
+        </a>
+        <span class="flot__lot">Featured single origin</span>
       </div>
-    </div>
+      <div class="flot__buy">
+        <span class="flot__origin">Colombia · Single origin</span>
+        <h1 class="flot__name">Fresh specialty coffee, roasted to order</h1>
+        <div class="flot__spec">Antioquia · 1,750 masl · Washed process</div>
+        <p class="flot__blurb">Discover traceable coffee selected for sweetness, clarity, and character. Our featured Antioquia lot balances red plum, cocoa nib, and panela in a rounded, comforting cup.</p>
+        <div class="flot__notes"><span>Red plum</span><span>Cocoa nib</span><span>Panela</span></div>
+        <div class="flot__actions"><a class="btn btn--copper" href="product.html?id=antioquia-colombia">View featured coffee</a><a class="btn btn--ghost" href="shop.html">Shop all coffee</a></div>
+        <ul class="flot__trust"><li>Roasted fresh</li><li>Ships in 24h</li><li>Free over $45</li></ul>
+      </div>
+    </section>
 
-    <!-- STOREFRONT CATALOG -->
+    <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>Ethiopia</span><span>·</span><span>Colombia</span><span>·</span><span>Guatemala</span><span>·</span><span>Kenya</span><span>·</span><span>Rwanda</span><span>·</span><span>Costa Rica</span><span>·</span><span>Ethiopia</span><span>·</span><span>Colombia</span><span>·</span><span>Guatemala</span><span>·</span><span>Kenya</span></div></div>
+
     <section class="storefront" id="shop" aria-labelledby="shop-heading">
-      <div class="storefront__bar">
-        <div>
-          <span class="eyebrow">The lot list</span>
-          <h2 id="shop-heading">Shop the current harvest</h2>
-        </div>
-        <div class="storefront__tools">
-          <span class="storefront__count"><b id="storeCount">8</b> lots in stock</span>
-          <label class="sorter">Sort
-            <select id="sortSelect" aria-label="Sort products">
-              <option value="featured">Featured</option>
-              <option value="price-asc">Price: low to high</option>
-              <option value="price-desc">Price: high to low</option>
-              <option value="name">Name: A–Z</option>
-            </select>
-          </label>
-        </div>
-      </div>
-
+      <div class="storefront__bar"><div><span class="eyebrow">The lot list</span><h2 id="shop-heading">Shop the current harvest</h2></div><div class="storefront__tools"><span class="storefront__count"><b id="storeCount">8</b> lots in stock</span><label class="sorter">Sort <select id="sortSelect" aria-label="Sort products"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Name: A–Z</option></select></label></div></div>
       <div class="storefront__grid">
         <aside class="rail" aria-label="Filter products">
-          <div class="rail__group">
-            <h3 class="rail__title">Type</h3>
-            <div class="rail__pills" id="railCat">
-              <button data-cat="all" aria-pressed="true">All</button>
-              <button data-cat="single">Single origin</button>
-              <button data-cat="blends">Blends</button>
-              <button data-cat="decaf">Decaf</button>
-            </div>
-          </div>
-          <div class="rail__group">
-            <h3 class="rail__title">Roast</h3>
-            <div class="rail__pills" id="railRoast">
-              <button data-roast="all" aria-pressed="true">All</button>
-              <button data-roast="Light">Light</button>
-              <button data-roast="Medium">Medium</button>
-              <button data-roast="Dark">Dark</button>
-            </div>
-          </div>
-          <div class="rail__group">
-            <h3 class="rail__title">Origin</h3>
-            <div class="rail__pills" id="railOrigin"></div>
-          </div>
-          <div class="rail__wholesale" id="wholesale">
-            <span class="rail__stamp">Trade desk</span>
-            <h3>Wholesale &amp; export</h3>
-            <p>Buying by the sack? We ship green &amp; roasted lots worldwide — 5&nbsp;kg minimum, priced per origin.</p>
-            <a class="btn btn--solid btn--block" href="mailto:trade@meridiansupply.com?subject=Wholesale%20enquiry">Request pricing →</a>
-          </div>
+          <div class="rail__group"><h3 class="rail__title">Type</h3><div class="rail__pills" id="railCat"><button data-cat="all" aria-pressed="true">All</button><button data-cat="single">Single origin</button><button data-cat="blends">Blends</button><button data-cat="decaf">Decaf</button></div></div>
+          <div class="rail__group"><h3 class="rail__title">Roast</h3><div class="rail__pills" id="railRoast"><button data-roast="all" aria-pressed="true">All</button><button data-roast="Light">Light</button><button data-roast="Medium">Medium</button><button data-roast="Dark">Dark</button></div></div>
+          <div class="rail__group"><h3 class="rail__title">Origin</h3><div class="rail__pills" id="railOrigin"></div></div>
+          <div class="rail__wholesale" id="wholesale"><span class="rail__stamp">Trade desk</span><h3>Wholesale and export</h3><p>Buying in volume? Ask about roasted lots and international shipping.</p><a class="btn btn--solid btn--block" href="mailto:hello@meridianroasters.com?subject=Wholesale%20enquiry">Request pricing →</a></div>
         </aside>
-
-        <div class="catalog">
-          <div class="grid" id="store-grid" aria-live="polite"></div>
-        </div>
+        <div class="catalog"><div class="grid" id="store-grid" aria-live="polite">
+          <article class="card"><a class="card__visual" href="product.html?id=antioquia-colombia"><img class="product-photo" src="assets/products/antioquia-colombia.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Antioquia Colombia specialty coffee" /></a><div class="card__body"><span class="card__origin">Colombia</span><h3 class="card__name"><a href="product.html?id=antioquia-colombia">Antioquia</a></h3><p class="card__notes">Red plum · Cocoa nib · Panela</p></div></article>
+          <article class="card"><a class="card__visual" href="product.html?id=yirgacheffe-ethiopia"><img class="product-photo" src="assets/products/yirgacheffe-ethiopia.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Yirgacheffe Ethiopia specialty coffee" /></a><div class="card__body"><span class="card__origin">Ethiopia</span><h3 class="card__name"><a href="product.html?id=yirgacheffe-ethiopia">Yirgacheffe</a></h3><p class="card__notes">Blueberry · Jasmine · Lemon zest</p></div></article>
+          <article class="card"><a class="card__visual" href="product.html?id=huehuetenango-guatemala"><img class="product-photo" src="assets/products/huehuetenango-guatemala.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Huehuetenango Guatemala specialty coffee" /></a><div class="card__body"><span class="card__origin">Guatemala</span><h3 class="card__name"><a href="product.html?id=huehuetenango-guatemala">Huehuetenango</a></h3><p class="card__notes">Milk chocolate · Toffee · Orange</p></div></article>
+          <article class="card"><a class="card__visual" href="product.html?id=nyeri-kenya"><img class="product-photo" src="assets/products/nyeri-kenya.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Nyeri Kenya specialty coffee" /></a><div class="card__body"><span class="card__origin">Kenya</span><h3 class="card__name"><a href="product.html?id=nyeri-kenya">Nyeri</a></h3><p class="card__notes">Blackcurrant · Grapefruit · Brown sugar</p></div></article>
+          <article class="card"><a class="card__visual" href="product.html?id=meridian-house-blend"><img class="product-photo" src="assets/products/meridian-house-blend.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Meridian House Blend coffee" /></a><div class="card__body"><span class="card__origin">Blend</span><h3 class="card__name"><a href="product.html?id=meridian-house-blend">House Blend</a></h3><p class="card__notes">Hazelnut · Dark cocoa · Caramel</p></div></article>
+          <article class="card"><a class="card__visual" href="product.html?id=gakenke-rwanda"><img class="product-photo" src="assets/products/gakenke-rwanda.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Gakenke Rwanda specialty coffee" /></a><div class="card__body"><span class="card__origin">Rwanda</span><h3 class="card__name"><a href="product.html?id=gakenke-rwanda">Gakenke</a></h3><p class="card__notes">Red apple · Black tea · Honey</p></div></article>
+          <article class="card"><a class="card__visual" href="product.html?id=tarrazu-costa-rica"><img class="product-photo" src="assets/products/tarrazu-costa-rica.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Tarrazu Costa Rica specialty coffee" /></a><div class="card__body"><span class="card__origin">Costa Rica</span><h3 class="card__name"><a href="product.html?id=tarrazu-costa-rica">Tarrazú</a></h3><p class="card__notes">Green apple · Almond · Molasses</p></div></article>
+          <article class="card"><a class="card__visual" href="product.html?id=decaf-swiss-water"><img class="product-photo" src="assets/products/decaf-swiss-water.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Midnight Swiss Water decaf coffee" /></a><div class="card__body"><span class="card__origin">Colombia · Decaf</span><h3 class="card__name"><a href="product.html?id=decaf-swiss-water">Midnight</a></h3><p class="card__notes">Dark chocolate · Walnut · Cherry</p></div></article>
+        </div></div>
       </div>
     </section>
 
-    <!-- TRUST STRIP -->
-    <section class="trust" aria-label="Why Meridian">
-      <div class="trust__inner">
-        <div class="trust__item"><b>Direct trade</b><span>Bought from farms we visit, above Fair Trade.</span></div>
-        <div class="trust__item"><b>Roasted to order</b><span>Nothing warehoused — beans hit the drum the week they ship.</span></div>
-        <div class="trust__item"><b>Shipped in 24h</b><span>Out the door in a day, carbon-offset worldwide.</span></div>
+    <section class="trust" aria-label="Why Meridian Roasters"><div class="trust__inner"><div class="trust__item"><b>Traceable sourcing</b><span>Every single-origin lot includes its region, altitude, and process.</span></div><div class="trust__item"><b>Roasted to order</b><span>Fresh coffee instead of beans left sitting in a warehouse.</span></div><div class="trust__item"><b>Shipped in 24h</b><span>Carefully packed and dispatched quickly after roasting.</span></div></div></section>
+
+    <section class="seo-content" aria-labelledby="why-heading">
+      <span class="eyebrow">Better coffee starts here</span>
+      <h2 id="why-heading">How to choose freshly roasted specialty coffee</h2>
+      <p>Specialty coffee is graded for quality and selected for the distinctive flavors created by its variety, growing conditions, harvest, and processing method. At Meridian Roasters, we keep those details visible so you can choose coffee by taste rather than guesswork. Each product lists its origin, roast level, process, altitude, and tasting notes.</p>
+      <div class="seo-content__grid">
+        <div><h3>Start with the roast</h3><p>Light roasts preserve bright fruit and floral character, making them a natural match for pour-over brewing. Medium roasts balance acidity with sweetness and work well across filter, drip, and French press. Medium-dark coffee develops deeper cocoa, caramel, and nut flavors that stand up beautifully in milk.</p></div>
+        <div><h3>Match coffee to your brewer</h3><p>For pour-over, explore Yirgacheffe, Nyeri, or Gakenke. If you brew with a drip machine or French press, Antioquia and our House Blend are forgiving everyday choices. Midnight delivers a full evening cup without caffeine. Visit the <a href="shop.html">specialty coffee shop</a> to compare every lot.</p></div>
+        <div><h3>Freshness you can taste</h3><p>Whole coffee beans retain their aroma longer than pre-ground coffee. Store them sealed, away from heat and direct light, and grind only what you need before brewing. Our roast-to-order schedule shortens the time between the roaster and your cup.</p></div>
       </div>
+      <p>Want to know how we source and roast? Read <a href="about.html">the Meridian Roasters story</a>, or contact our wholesale desk for larger orders.</p>
     </section>
 
-    <!-- NEWSLETTER -->
-    <section class="cta-band" aria-labelledby="cta-heading">
-      <div class="cta-band__inner">
-        <h2 id="cta-heading">Get the drop list.</h2>
-        <p>New micro-lots sell out in days. Subscribers hear first — plus 10% off your first order.</p>
-        <form class="signup" id="signup-form" novalidate>
-          <label class="visually-hidden" for="email">Email address</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
-          <button type="submit" class="btn btn--solid">Notify me</button>
-        </form>
-        <p class="signup__note" id="signup-note" role="status"></p>
-      </div>
-    </section>
+    <section class="faq" aria-labelledby="faq-heading"><span class="eyebrow">Coffee questions</span><h2 id="faq-heading">Frequently asked questions</h2><details><summary>When is Meridian coffee roasted?</summary><p>We roast in small batches during the week your coffee ships and dispatch orders within 24 hours of roasting.</p></details><details><summary>Which roast should I choose?</summary><p>Choose light roast for floral and fruit-led flavors, medium for balance and sweetness, or medium-dark for chocolate, caramel, and a fuller body.</p></details><details><summary>Do you offer decaf coffee?</summary><p>Yes. Midnight is a Colombian coffee decaffeinated with the chemical-free Swiss Water process.</p></details></section>
+
+    <section class="cta-band" aria-labelledby="cta-heading"><div class="cta-band__inner"><h2 id="cta-heading">Get the drop list.</h2><p>New micro-lots sell out quickly. Subscribers hear first and receive 10% off their first order.</p><form class="signup" id="signup-form" novalidate><label class="visually-hidden" for="email">Email address</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required /><button type="submit" class="btn btn--solid">Notify me</button></form><p class="signup__note" id="signup-note" role="status"></p></div></section>
   </main>
 
-  <div id="site-footer"></div>
-
+  <div id="site-footer"><footer class="seo-footer"><p>© Meridian Roasters. Small-batch specialty coffee, roasted to order.</p><nav aria-label="Footer navigation"><a href="index.html">Home</a> <a href="shop.html">Shop</a> <a href="about.html">Our story</a> <a href="sitemap.xml">Sitemap</a></nav></footer></div>
   <script src="js/products.js"></script>
   <script src="js/main.js"></script>
 </body>
