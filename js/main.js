@@ -224,8 +224,6 @@ function renderChrome() {
           <h4>Resources</h4>
           <ul>
             <li><a href="index.html#newsletter">Newsletter</a></li>
-            <li><a href="sitemap.xml">XML sitemap</a></li>
-            <li><a href="llms.txt">AI site guide</a></li>
           </ul>
         </div>
       </div>
